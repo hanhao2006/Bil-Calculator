@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_design"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Bill Calculation App"
+       android:gravity="center"
+       android:padding="15dp"
+       android:background="@drawable/title_design"
+       android:textStyle="normal"
+       android:textColor="@android:color/holo_blue_dark"
+       android:textSize="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Number of member"
+
+        android:id="@+id/editTextNumberOfMember"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Total Bill"
+
+        android:id="@+id/editTextTotallBill"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tps(5%):"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/tps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tps(5%)"/>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TVQ(9.975%):"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+    <EditText
+        android:id="@+id/tvq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="TVQ(9.975%)"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total bill:"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+        <EditText
+            android:id="@+id/totalbill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="Each Person Bill is: "
+        android:gravity="center"
+        android:background="@drawable/textview_design"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:id="@+id/textViewBill"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Calculate"
+        android:background="@drawable/button_design"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/btnCal"/>
+</LinearLayout>
